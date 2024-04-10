@@ -11,6 +11,6 @@
 4. <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a>: recomendaciones de Visual Studio para mejorar la rapidez del codigo
 
 ## 🤔 Como descargar este proyecto?
-1. Click en <>code
+1. Click en ```<>code```
 2. Click en ```download zip```
 3. Extraer el codigo
