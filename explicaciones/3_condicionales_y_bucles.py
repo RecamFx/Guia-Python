@@ -1,99 +1,185 @@
-# IF, FOR, WHILE
-# ELSE, ELIF
+# Condicionales y bucles
+# If, for, while, else y elif
 
-# ELSE Y ELIF
-# Se ejecutan cuando: 
-# IF(cuando la funcion no se cumple)
-# FOR(cuando termina de ejecutarse)
-# WHILE(cuando termina de ejecutarse)
+# Funcionamiento:
+# if condicion: codigo
+# for variable in valor: codigo
+# while condicion: codigo
 
-# IF
-# Estructura: IF CONDICION: CODIGO
-# Ejemplo:
+# else y elif se escribe despues de los condicionales
+# elif es un if si no se cumple el primer if
 
-# plata = 100
-# if plata < 100:
-#     print("Tenes menos de 100 pesos!")
-# elif plata > 100:
-#     print("Tenes mas de 100 pesos!")
-# else:
-#     print("Tenes 100 pesos!")
+# Siempre que se cumpla la condicion se va a ejecutar
+
 
 # -------------------------------------------------------------------------------------------------------------------------------#
 
-# FOR
-# ESTRUCTURA: for variables in valor: codigo
-# El valor puede ser range()
 
-# range(valor, valor, valor) 
-# Primer valor(opcional): indica la cantidad donde va a empezar
-# Segundo valor(NO OPCIONAL): indica el maximo sin contarse a el mismo
-# Tercer valor(OPCIONAL): indica cada cuanto va a contar el for
+# IF
+plata = 100
 
-# range(10) = [0,1,2,3,4,5,6,7,8,9]
-# range(5, 10) = [5,6,7,8,9]
-# range(5, 10, 2) = [5,7,9]
-# for variable in [100, 200, 300]:
-#     print(variable)
+if plata < 100:
+    print("Tenes menos de 100 de plata!")
+elif plata > 100:
+    print("Tenes mas de 100 de plata!") #? Tenes mas de 100 de palta!
+else:
+    print("Tenes 100 de plata!")
+  
+  
+# -------------------------------------------------------------------------------------------------------------------------------#
     
-animales = ["cerdo", "cabra", "oveja", "leon", "panda"]
+    
+# FOR
+# Para el for una de las opciones es usar el range()
+# range(valor de inicio opcional, valor final)
 
-# FORMA NO OPTIMAAAA!
-# for animal in range(len(animales)):
-#     print(animales[animal])
+for i in range(5, 10):
+    print(i)
 
-# FORMA OPTIMA!
-# for animal in animales:
-#     print(animal)
+#? 5
+#? 6
+#? 7
+#? 8
+#? 9
 
-# for i in "hola":
-#     print(i)
-
-# FOR ELSE
-# for i in range(10):
-#     print(i)
-# else:
-#     print("BUCLE TERMINADO!")
+    
+# -------------------------------------------------------------------------------------------------------------------------------#
 
 
-# FOR BREAK
-# for i in range(10):
-#     if i > 3:
-#         break
-#     print(i)
+# WHILE
+
+contador = 10
+
+while contador > 0:
+    print(contador)
+    contador -= 1
+
+#? 9
+#? 8
+#? 7
+#? 6
+#? 5
+#? 4
+#? 3
+#? 2
+#? 1
 
 
-# FOR CONTINUE
-# for animal in animales:
-#     if animal == "leon":
-#         continue
-#     print(animal)
+# -------------------------------------------------------------------------------------------------------------------------------#
 
 
-# FOR list comprehensions
-# numeros = [10,5,6]
-# nuemros2 = [numeritos*2 for numeritos in numeros]
-# print(nuemros2)
+# BUCLES
+
+while True:
+    print("esto es un bucle") #? Esto es un bucle
+    break # La funcion break sirve para frenar un bucle
 
 
-# WHILE ELSE
-# contado = 10
-# while contado > 0:
-#     print(contado)
-#     contado -= 1
-# else:
-#     print("Bucle termiando!")
+# Sirve para fors tambien
+# Aca le decimos que si i es mayor a 5 que pare todo el codigo (cuando se ejecuta break no importa en que parte del codigo estas, se frena todo)
+for i in range(10):
+    if i > 5:
+        break
+    print(i)
+0
+#? 1
+#? 2
+#? 3
+#? 4
+#? 5
 
 
-# WHILE BREAK
-# FORMA NO OPTIMA
-# bucle = 1
-# while bucle == 1:
-#     print("hola")
-#     bucle = 0
+# -------------------------------------------------------------------------------------------------------------------------------#
 
-# FORMA OPTIMA
-# while True:
-#     print("Hola")
-#     break
 
+# Leer arrays
+# Forma optima
+animales = ["cerdo", "cabra", "obeja", "leon", "panda"]
+
+for animal in animales:
+    print(animal)
+
+#? cerdo
+#? cabra
+#? obeja
+#? leon
+#? panda
+
+
+# Tambien se puede hacer con strings
+texto = "Hola Mundo!"
+for i in texto:
+    print(i)
+
+#? H
+#? o
+#? l
+#? a
+#? 
+#? M
+#? u
+#? n
+#? d
+#? o
+#? !
+
+
+# -------------------------------------------------------------------------------------------------------------------------------#
+
+
+# For else
+# Los else en los for actuan cuando termina el codigo
+
+for i in range(10):
+    print(i)
+else:
+    print("Termino el bucle!")
+
+#? 0
+#? 1
+#? 2
+#? 3
+#? 4
+#? 5
+#? 6
+#? 7
+#? 8
+#? 9
+#? Termino el bucle!
+
+
+# -------------------------------------------------------------------------------------------------------------------------------#
+
+
+# Continue
+# El continue hace que se saltee al siguiente bucle
+
+frutas = ["manzana", "naranja", "uva", "frutilla"]
+for i in frutas:
+    if i == "uva":
+        continue # Aca le decimos que si es uva la fruta que saltee al siguiente bucle, asi evitando que imprima la fruta
+    print(i)
+
+#? manzana
+#? naranja
+#? frutilla
+
+
+# -------------------------------------------------------------------------------------------------------------------------------#
+
+
+# list comprehensions
+# Supongamso que quiero multiplicar los numeros de una lista por 2, como seria
+
+# Forma no optima:
+# numeros = [2, 4, 5, 7, 9, 20]
+# listanueva = []
+# for i in range(len(numeros)):
+#     listanueva.append(numeros[i]*2)
+# print(listanueva) #? [4, 8, 10, 14, 18, 40]
+
+
+# Forma optima:
+numeros = [2, 4, 5, 7, 9, 20]
+nueva_lista = [x*2 for x in numeros]
+print(nueva_lista) #? [4, 8, 10, 14, 18, 40]
