@@ -28,3 +28,17 @@ print(array) #? ['Ya no soy', 'un', 'array']
 # Pasa lo mismo pero con los strings para LLAMARLOS, no para EDITARLOS
 texto = "Hola"
 print(texto[0]) #? H
+
+
+# -------------------------------------------------------------------------------------------------------------------------------#
+
+
+# IN
+
+palabra = "Hola"
+palabra2 = "la"
+print(palabra2 in palabra) #? True
+
+palalabraLista = list("hola")
+palabra2Lista = "l"
+print(palabra2Lista in palalabraLista) #? True
