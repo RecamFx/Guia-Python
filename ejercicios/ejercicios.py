@@ -10,7 +10,7 @@
 # Cuanto va a salir todos los productos y cuanta plata sobra o falta. 
 
 
-#? EJERCICIOS: 1,2 y 5 
+#? EJERCICIOS: 1,2 y 3
 # Hacer un programa que infinitamente te pida: cantidad de productos y valor de productos. 
 # Y que cuando escribas “exit” haga la suma de todos los productos. 
 
@@ -18,7 +18,7 @@
 # (antes de las 12hs: 30% OFF, antes de las 5hs: precio normal y a partir de las 5hs un 25% de aumento). 
 # El usuario ingresa el número de cancha y la hora, devolver el valor. 
 
-#? EJERCICIOS: 1,2,3 y 5 
+#? EJERCICIOS: 1,2,3 y 4
 # Hacer un programa que te diga si la palabra 1 está dentro de la palabra dos 
 # (ambas ingresadas por consola) [hace lo usando el IN y sin usar el IN]. 
 
