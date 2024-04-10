@@ -1,4 +1,4 @@
-# Mini guia de python muy basica <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" width="30">
+#<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" width="30"> Mini guia de python muy basica
 
 ## 🤙 Aclaraciones
 1. Los comentarios con ```#?``` refiere a lo que la consola tendria que imprimir
