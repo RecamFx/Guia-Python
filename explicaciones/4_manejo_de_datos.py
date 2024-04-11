@@ -39,6 +39,6 @@ palabra = "Hola"
 palabra2 = "la"
 print(palabra2 in palabra) #? True
 
-palalabraLista = list("hola")
+palalabraLista = ["h", "o", "l", "a"]
 palabra2Lista = "l"
 print(palabra2Lista in palalabraLista) #? True
