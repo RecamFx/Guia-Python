@@ -8,10 +8,10 @@ def saludar():
 saludar() #? Hola buenos dias
 
 
-def saludar2(nombre):
-    print(f"Hola {nombre}!")
+def saludar2(nombre, apellido, edad):
+    print(f"Hola {nombre} {apellido}, tenes {edad} anios!")
 
-saludar2("Stephen") #? Hola Stephen!
+saludar2("Stephen", "Curry", "36") #? Hola Stephen Curry!
 
 
 # -------------------------------------------------------------------------------------------------------------------------------#
@@ -19,13 +19,31 @@ saludar2("Stephen") #? Hola Stephen!
 
 # Definir parametro de la funcion por defecto
 # Si no ponemos el parametro, por defecto le vamos a asignar un valor
+# Esto es un parametro opcional
+# Se usan solo en los ultimos parametros
 
-def saludar3(nombre="usuario"):
-    print(f"Hola {nombre}")
+def saludar3(apellido, nombre="invitado"):
+    print(f"Hola {nombre} {apellido}")
 
-saludar3() #? Hola usuario
-saludar3("Camilo") #? Hola Camilo
+saludar3("Curry") #? Hola invitado
+saludar3("Curry", "Stephen") #? Hola Stephen
 
+
+# -------------------------------------------------------------------------------------------------------------------------------#
+
+
+# RETURN
+# Devuelve un valor
+# La funcion va a pasar a ser el valor returneado
+
+def cuenta(num1, num2):
+    resultado1 = num1 + num2
+    resultado2 = num1 - num2
+    return resultado1, resultado2
+
+valor = cuenta(10, 20)
+print(valor[0]) #? 30
+print(valor[1]) #? -10
 
 # -------------------------------------------------------------------------------------------------------------------------------#
 # FUNCIONES INTEGRADAS O BUILD IN
@@ -39,7 +57,6 @@ numeroMasAlto = max(numeros)
 print(numeroMasAlto) #? 9
 numeroMasBajo = min(numeros)
 print(numeroMasBajo) #? 2
-
 
 # -------------------------------------------------------------------------------------------------------------------------------#
 
@@ -59,6 +76,7 @@ print(round(numero,2)) # Primer parametro el numero, el segundo parametro, la ca
 
 
 # SUM()
+
 # Suma todos los valores de un iterable
 
 numeoros = [10, 34, 278]
