@@ -1,5 +1,7 @@
 # <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" width="30"> Mini guia de <a href="https://www.python.org/downloads/">Python</a> muy basica
 
+<img src="https://i.imgur.com/A2jejIq.jpeg">
+
 ## 🤙 Aclaraciones
 1. Los comentarios con ```#?``` refiere a lo que la consola tendria que imprimir
 
