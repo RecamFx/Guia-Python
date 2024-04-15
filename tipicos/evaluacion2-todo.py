@@ -28,6 +28,7 @@ def filterNotX(Name, NameX):
     return n2
 
 # Nombres generados
+#nGen = nombresGenerator()
 nGen = ["holax", "camilox", "buenas", "ijija", "alax"]
 nX = filterX(nGen)
 nNotX = filterNotX(nGen, nX)
