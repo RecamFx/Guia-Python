@@ -32,6 +32,7 @@ nGen = ["holax", "camilox", "buenas", "ijija", "alax"]
 nX = filterX(nGen)
 nNotX = filterNotX(nGen, nX)
 
+#! FALTA TERMINAR
 
 
 # ----------------------------------------------------------------------------------------- #
